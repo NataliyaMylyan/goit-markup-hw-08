@@ -63,6 +63,7 @@
 
   &-policy-label {
     display: inline-flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     text-align: left;
     @include fontvar(400, 12px, 1.167, 0.03em);

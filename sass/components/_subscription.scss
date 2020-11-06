@@ -4,7 +4,7 @@
     text-align: center;
   }
 
-    @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     &-title {
       @include fontvar(700, 14px, 1.143, 0.03em);
       text-align: center;
@@ -15,6 +15,7 @@
 
     &-email-input {
       width: 450px;
+      max-width: 100%;
       display: inline-block;
       height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
@@ -39,50 +40,51 @@
 
   @media screen and (min-width: 1200px) {
     &-form {
-    margin-left: 93px;
-    padding-top: 12px;
+      margin-left: 93px;
+      padding-top: 12px;
 
-    &-field-button {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
+      &-field-button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
     }
-  }
-  &-title {
-    @include fontvar(700, 14px, 1.143, 0.03em);
-    text-transform: uppercase;
-    text-align: left;
-    margin-bottom: 20px;
-    color: #ffffff;
-  }
-  &-email-input {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background: #2f303a;
-    margin-right: 12px;
-    padding: 15px 0px 15px 16px;
-    color: rgba(255, 255, 255, 0.6);
-
-    &:focus {
-      outline: none;
+    &-title {
+      @include fontvar(700, 14px, 1.143, 0.03em);
+      text-transform: uppercase;
+      text-align: left;
+      margin-bottom: 20px;
+      color: #ffffff;
     }
 
-    &::placeholder {
-      @include fontvar(400, 16px, 1.25, 0.03em);
-      align-items: center;
+    &-email-input {
+      width: 358px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background: #2f303a;
+      margin-right: 12px;
+      padding: 15px 0px 15px 16px;
       color: rgba(255, 255, 255, 0.6);
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        @include fontvar(400, 16px, 1.25, 0.03em);
+        align-items: center;
+        color: rgba(255, 255, 255, 0.6);
+      }
     }
   }
 }
-  }
-
 
 .btn-subscribe {
   margin: 0 auto;
   width: 200px;
+  max-width: 100%;
   height: 50px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
