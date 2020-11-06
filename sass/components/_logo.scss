@@ -1,0 +1,52 @@
+.logo-name {
+  &:hover {
+    cursor: pointer;
+  }
+  &-header {
+    @include fontvar(700, 24px, 1.167, 0.03em);
+    font-style: normal;
+    color: #000000;
+  }
+
+  &-one {
+    font-family: $secondary-font;
+    font-style: normal;
+    @include fontvar(700, 24px, 1.167, 0.03em);
+    color: #2196f3;
+  }
+
+  &-footer {
+    font-family: $secondary-font;
+    font-style: normal;
+    @include fontvar(700, 24px, 1.167, 0.03em);
+    color: #fff;
+  }
+
+  @media screen and (min-width: 480px) {
+    &-header {
+      margin-right: 276px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &-header {
+      margin-right: 88px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &-header {
+      margin-right: 93px;
+      @include fontvar(700, 26px, 1.192, 0.03em);
+    }
+
+    &-one {
+      @include fontvar(700, 26px, 1.192, 0.03em);
+    }
+
+    &-footer {
+      @include fontvar(700, 26px, 1.192, 0.03em);
+    }
+  }
+}
+

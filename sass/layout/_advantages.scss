@@ -1,0 +1,128 @@
+.section-advantages {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-list {
+    display: block;
+
+    &-item::before {
+      content: "";
+      display: block;
+      height: 120px;
+      width: 100%;
+      background-color: #f5f4fa;
+      margin-bottom: 30px;
+      border-radius: 4px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &-item-description {
+      @include fontvar(400, 14px, 2, 0.03em);
+      color: #757575;
+      width: 100%;
+    }
+    &-item-title {
+      @include fontvar(700, 14px, 1.143, 0.03em);
+      text-align: center;
+      text-transform: uppercase;
+      color: $title-color;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+
+      &-item {
+        width: calc((100% - 4 * 15) / 2);
+        margin: 15px;
+      }
+      &-item::before {
+        content: "";
+        display: block;
+        height: 120px;
+        background-color: #f5f4fa;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &-item-description {
+        @include fontvar(400, 14px, 2, 0.03em);
+        color: #757575;
+        width: 354px;
+      }
+      &-item-title {
+        @include fontvar(700, 14px, 1.143, 0.03em);
+        text-align: left;
+        text-transform: uppercase;
+        color: $title-color;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &-list {
+      display: flex;
+      margin: 0;
+
+      &-item {
+        width: 270px;
+        margin: 0;
+      }
+
+      &-item-title {
+        @include fontvar(700, 14px, 1.143, 0.03em);
+        text-transform: uppercase;
+        color: $title-color;
+
+        .list & {
+          margin-bottom: 10px;
+        }
+      }
+
+      &-item::before {
+        content: "";
+        display: block;
+        height: 120px;
+        width: 270px;
+        background-color: #f5f4fa;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &-item-description {
+        @include fontvar(400, 14px, 2, 0.03em);
+        color: #757575;
+        width: 270px;
+      }
+      &-item:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.icon {
+  &-antenna::before {
+    background-image: url("../images/icons_advantages/antenna\ 1.svg");
+  }
+  &-clock::before {
+    background-image: url("../images/icons_advantages/clock\ 1.svg");
+  }
+  &-diagram::before {
+    background-image: url("../images/icons_advantages/diagram\ 1.svg");
+  }
+  &-astronaut::before {
+    background-image: url("../images/icons_advantages/astronaut\ 1.svg");
+  }
+}
+

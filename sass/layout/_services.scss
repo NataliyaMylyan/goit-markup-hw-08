@@ -1,0 +1,26 @@
+.section-services {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+
+  padding-bottom: 94px;
+
+  &-title {
+    margin-bottom: 50px;
+    @include fontvar(700, 36px, 1.167, 0.03em);
+    text-align: center;
+    color: $title-color;
+  }
+
+  &-list {
+    display: flex;
+
+    &-item {
+      position: relative;
+
+      &:not(:nth-child(3n)) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
